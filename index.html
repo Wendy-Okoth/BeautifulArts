@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beau-Arts</title>
+    <link rel="stylesheet" href="assets/style/css/main.min.css">
+    <link rel="shortcut icon" href="assets/svg/logo.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        #home {
+            background-image: url("assets/images/museum_art.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="min-vh-100">
+    <!--  navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-primary position-relative z-3">
+        <div class="container py-4">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/svg/logo.svg" alt="logo" class="img-fluid me-4" width="40" rcset="">
+            </a>
+            <button class="navbar-toggler bg-warning  rounded-5 border-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            more
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#sponsorship">Sponsorship</a></li>
+                            <li><a class="dropdown-item" href="#about-us">About US</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#contact-us">Contact US</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 rounded-5" type="search" placeholder=" Find art..."
+                        aria-label="Search" />
+                    <button class="btn btn-outline-warning rounded-5 px-4 py-2" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section -->
+
+    <section id="home" class="min-vh-100">
+        <div class="position-absolute top-0 start-0 w-100 vh-100 bg-primary opacity-50 z-1"></div>
+        <div class="position-relative py-5 z-3">
+            <div class="container p-5">
+                <h1 class="display-1 fw-bold text-warning">Beautiful Arts Gallery</h1>
+                <h3 class="display-6 text-warning">Museum of Arts</h3>
+                <h5 class="fs-6 text-warning">A blend of modern and Medieval ages</h5>
+                <p class="lead fs-2 fw-lighter text-light mt-5">Explore timeless masterpieces, experience diverse artistic expressions, and discover the beauty of Africa's cultural legacy</p>
+                <!-- <button type="button" class="btn  btn-lg btn-warning mt-4"> support us </button> -->
+                 <a href="#contact" class="btn btn-lg btn-primary mt-4">Support Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Gallery Section -->
+
+<section id="gallery" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Gallery — A Blend of Modern & Medieval Arts</h2>
+    <p class="mb-5 text-muted">Exploring creativity through centuries — from Medieval masterpieces to contemporary visions.</p>
+
+    <div class="row">
+      <!-- Medireval Art 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="assets/images/medieval1.jpg" class="card-img-top" alt="Midevil Art 1">
+          <div class="card-body">
+            <h5 class="card-title">The Golden Age</h5>
+            <p class="card-text">An intricate Medieval piece showcasing craftsmanship and timeless beauty.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern Art 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="assets/images/modern1.jpg" class="card-img-top" alt="Modern Art 1">
+          <div class="card-body">
+            <h5 class="card-title">Neo Vision</h5>
+            <p class="card-text">A bold modern artwork blending emotion, geometry, and digital flair.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medieval Art 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="assets/images/medieval2.jpg" height="340" class="card-img-top" alt="Medieval Art 2">
+          <div class="card-body">
+            <h5 class="card-title">Ethereal Kingdom</h5>
+            <p class="card-text">A Medieval-inspired masterpiece celebrating detail, symmetry, and historical artistry.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="assets/images/about.jpg" class="img-fluid rounded" alt="About Us Image">
+      </div>
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>Beautiful Arts Gallery is a creative space celebrating the union of Midevil and Modern artistry. From timeless Midevil masterpieces to contemporary visions, our gallery explores creativity through the ages.</p>
+        <p>Our mission is to inspire, educate, and empower artists and enthusiasts alike. We believe every piece has a story — whether from centuries ago or the modern era — and we provide a platform where all these stories coexist harmoniously.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sponsorship Section -->
+<section id="sponsorship" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Sponsorship</h2>
+    <p class="mb-5">We partner with organizations, art lovers, and cultural institutions to preserve, celebrate, and share the beauty of art across time. Our sponsors help us bring Midevil and Modern creativity to life for all visitors.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-3">
+        <img src="assets/images/sponsor1.jpg" class="img-fluid" alt="Sponsor 1">
+      </div>
+      <div class="col-md-3 mb-3">
+        <img src="assets/images/sponsor2.jpg" class="img-fluid" alt="Sponsor 2">
+      </div>
+      <div class="col-md-3 mb-3">
+        <img src="assets/images/sponsor3.jpg" class="img-fluid" alt="Sponsor 3">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">Reach out to us for inquiries, collaborations, or feedback.</p>
+
+    <div class="contact-content">
+      <div class="contact-form">
+        <form id="contactForm" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Our Contact</h3>
+        <p><strong>Email:</strong> beautifulartsgallery@info.com</p>
+        <p><strong>Phone:</strong> +254786234134</p>
+        <p><strong>Address:</strong> P.O Box 60274-00200 </p>
+        <p><strong>Location:</strong>Riruta, Nairobi, Kenya</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer>
+  <div class="footer-social">
+    <p>Follow us:</p>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="assets/svg/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="assets/svg/twitter.svg" alt="Twitter" />
+      </a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+        <img src="assets/svg/tiktok.svg" alt="TikTok" />
+      </a>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <p>&copy; 2025  Beautiful Arts Gallery. All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

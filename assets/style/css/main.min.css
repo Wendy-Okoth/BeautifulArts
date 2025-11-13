@@ -1,0 +1,395 @@
+:root {
+  --primary: #800000;       /* Maroon */
+  --primary-dark: #660000;
+  --secondary: #ffcc00;     /* Gold */
+  --auxiliary: #f5f0e6;     /* Beige */
+  --text-dark: #0d1f66;
+  --text-muted: #334d99;
+  --shadow-blue: rgba(128, 0, 0, 0.5);
+}
+
+/* GLOBAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: var(--text-dark);
+  background: var(--auxiliary);
+}
+
+/* NAVBAR */
+.navbar {
+  background: linear-gradient(to right, #400000 0%, var(--primary));
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--secondary) !important;
+  text-shadow: 0 0 8px var(--secondary);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* HOME SECTION */
+#home {
+  background: url("assets/images/museum_art.jpg") center/cover no-repeat;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#home .bg-primary {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+#home h1, #home h3, #home h5, #home p {
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,51,0.5);
+}
+
+#home .btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#home .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px var(--shadow-blue);
+  background-color: var(--primary-dark);
+  color: #fff;
+}
+
+/* GALLERY SECTION */
+#gallery {
+  background: linear-gradient(135deg, var(--auxiliary), #e6dcd0);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#gallery h2 {
+  color: var(--primary);
+  font-weight: 800;
+  text-shadow: 1px 1px 5px rgba(128, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+#gallery p {
+  color: #5c3a3a;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+#gallery .card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 1px solid var(--primary);
+  background-color: var(--auxiliary);
+  cursor: pointer;
+}
+
+#gallery .card:hover {
+  transform: translateY(-7px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(128, 0, 0, 0.4), 0 0 20px rgba(255, 204, 0, 0.5);
+  border-color: var(--primary-dark);
+}
+
+#gallery .card-img-top {
+  border-bottom: 2px solid var(--primary);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#gallery .card-img-top:hover {
+  transform: scale(1.07);
+  filter: brightness(1.1);
+}
+
+#gallery .card-title {
+  color: #4d2c2c;
+  font-weight: 700;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#gallery .card-title:hover {
+  color: var(--primary);
+  text-shadow: 0 0 8px var(--secondary);
+}
+
+#gallery .card-text {
+  color: #5c3a3a;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+/* ABOUT US SECTION */
+#about {
+  background: linear-gradient(135deg, var(--auxiliary), #e6dcd0);
+  padding: 4rem 0;
+  color: #4d2c2c; /* warm brown text */
+}
+
+#about h2 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  text-shadow: 1px 1px 4px rgba(128, 0, 0, 0.2);
+}
+
+#about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #5c3a3a;
+}
+
+#about img {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(128, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  width: 100%;
+}
+
+#about img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(128, 0, 0, 0.5);
+  filter: brightness(1.05);
+}
+
+/* SPONSORSHIP SECTION */
+#sponsorship {
+  background: linear-gradient(135deg, #e6dcd0, #d9bfa3);
+  padding: 4rem 0;
+  color: #4d2c2c;
+  text-align: center;
+}
+
+#sponsorship h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  text-shadow: 1px 1px 5px rgba(128, 0, 0, 0.2);
+}
+
+#sponsorship p {
+  color: #5c3a3a;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+#sponsorship .img-fluid {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  border: 2px solid var(--primary);
+  padding: 0.5rem;
+  background-color: var(--auxiliary);
+  cursor: pointer;
+}
+
+#sponsorship .img-fluid:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 30px rgba(128, 0, 0, 0.4), 0 0 15px rgba(255, 204, 0, 0.4);
+  filter: brightness(1.1);
+}
+
+/* CONTACT SECTION */
+#contact {
+  background: linear-gradient(135deg, var(--auxiliary), #e6dcd0);
+  padding: 5rem 0;
+  color: #4d2c2c;
+}
+
+#contact .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--primary);
+  text-shadow: 1px 1px 4px rgba(128, 0, 0, 0.2);
+}
+
+#contact .section-subtitle {
+  font-size: 1.1rem;
+  color: #5c3a3a;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+.contact-form {
+  flex: 1 1 45%;
+  background-color: var(--auxiliary);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(128, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(128, 0, 0, 0.5);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4d2c2c;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  background-color: #fffaf5;
+  color: #4d2c2c;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #800000;
+  box-shadow: 0 0 15px rgba(128, 0, 0, 0.4);
+  outline: none;
+  background-color: #f5f0e6;
+}
+
+.contact-form .btn-submit {
+  background: #800000;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-form .btn-submit:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 35px rgba(128, 0, 0, 0.5), 0 0 15px rgba(255, 204, 0, 0.5);
+  background: #660000;
+  text-shadow: 0 0 5px #ffcc00;
+}
+
+.contact-info {
+  flex: 1 1 45%;
+  padding: 2rem;
+  background-color: #f5f0e6;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(128, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(128, 0, 0, 0.4);
+}
+
+.contact-info h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #800000;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #4d2c2c;
+  margin-bottom: 0.8rem;
+}
+
+/* RESPONSIVE FOR ALL */
+@media (max-width: 768px) {
+  #gallery h2,
+  #about h2,
+  #sponsorship h2,
+  #contact .section-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #gallery p,
+  #about p,
+  #sponsorship p,
+  #contact .section-subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #800000;
+  color: #f5f0e6;
+}
+
+.footer-social,
+.footer-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social p {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;/* makes icons light on dark */
+}
